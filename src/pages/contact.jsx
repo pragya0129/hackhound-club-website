@@ -1,6 +1,4 @@
 import React from 'react'
-// import '@rocktimsaikia/github-card'
-// import Contributors from "react-contributors";
 import {useState} from 'react';
 import emailjs from '@emailjs/browser';
 
@@ -19,7 +17,12 @@ export default function Contact() {
   }
 
   const handleSubmit=(e)=>{
-    emailjs.send('service_7vftg3f', 'template_b142zv5', {to_name: 'Coding Club IIT Jammu',message: values.message, from_name: values.name, reply_to: values.email,},'Mn912QQNe57pFwJEa')
+    emailjs.send("service_3gf5qju","template_tivdyj8",{
+      from_name: values.name,
+      to_name: "HackHound",
+      message: values.message,
+      reply_to: values.email,
+      }, 'obC4vl_mWfNFwQ199')
     .then(function(response) {
        console.log('SUCCESS!', response.status, response.text);
        alert('Your message has been successfully sent');
