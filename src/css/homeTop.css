@@ -15,19 +15,24 @@
 } */
 .heading{
     top: 40vh;
-    left: 16vw;
+    padding: 2rem;
     position: absolute;
     font-family: sans-serif;
     color: aliceblue;
     font-weight:800;
     font-size:5em;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 @media (max-width: 600px){
     .heading {
-        top: 30vh;
-        left: 8vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: 2.5em;
     }
 }

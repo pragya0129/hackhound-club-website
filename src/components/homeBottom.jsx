@@ -7,7 +7,7 @@ export default function HomeBottom() {
       style={{
         width: "80vw",
         marginLeft: "10vw",
-        marginTop: "850px",
+        marginTop: "890px",
         position: "relative",
       }}
     >

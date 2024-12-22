@@ -12,13 +12,13 @@ export default function homeTop() {
     <div class="particlejs-top">
         <Particle/>
         <div className='heading'>
-        <Typewriter
+        <Typewriter 
   
        onInit={(typewriter)=> {
   
        typewriter
         
-       .typeString("HACKHOUND SRM-IST")
+       .typeString("HACKHOUND CLUB SRM-IST ")
        .start();
        }}
        />
