@@ -12,7 +12,7 @@ export default function HomeBottom() {
       }}
     >
       <h1
-        className="font-medium text-5xl mt-0 mb-10 text-gray-400"
+        className="font-medium text-5xl mt-0 mb-10 text-gray-400 text-center md:text-left"
         style={{
           letterSpacing: "-0.02em",
           fontWeight: "800",
@@ -26,7 +26,7 @@ export default function HomeBottom() {
         <div className="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center">
           <div className="lg:max-w-[20%] lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <img
-              className="w-36 object-cover object-center rounded"
+              className="w-36 object-cover object-center rounded mx-auto block"
               alt="Web Development"
               src="https://thumbs.dreamstime.com/z/web-development-icon-trendy-flat-vector-white-background-programming-collection-illustration-can-be-use-mobile-eps-130326341.jpg"
             />
@@ -36,7 +36,9 @@ export default function HomeBottom() {
               Web Development
             </h1>
             <p className="mb-8 leading-relaxed text-gray-200">
-              Learn to design and build modern, responsive websites using the latest frameworks and technologies like React, Tailwind, and more. Gain practical experience by working on real-world projects.
+              Learn to design and build modern, responsive websites using the
+              latest frameworks and technologies like React, Tailwind, and more.
+              Gain practical experience by working on real-world projects.
             </p>
           </div>
         </div>
@@ -47,7 +49,7 @@ export default function HomeBottom() {
         <div className="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center">
           <div className="lg:max-w-[20%] lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <img
-              className="w-36 object-cover object-center rounded"
+              className="w-36 object-cover object-center rounded mx-auto block"
               alt="Android Development"
               src="https://www.pinclipart.com/picdir/big/376-3765631_android-png-photo-android-app-development-icon-clipart.png"
             />
@@ -57,7 +59,9 @@ export default function HomeBottom() {
               Android Development
             </h1>
             <p className="mb-8 leading-relaxed text-gray-200">
-              Dive into Android app development and create robust, user-friendly mobile applications. Learn Kotlin, Jetpack Compose, and industry best practices.
+              Dive into Android app development and create robust, user-friendly
+              mobile applications. Learn Kotlin, Jetpack Compose, and industry
+              best practices.
             </p>
           </div>
         </div>
@@ -68,7 +72,7 @@ export default function HomeBottom() {
         <div className="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center">
           <div className="lg:max-w-[20%] lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <img
-              className="w-36 object-cover object-center rounded"
+              className="w-36 object-cover object-center rounded mx-auto block"
               alt="AI/ML"
               src="https://www.meritas.in/wp-content/uploads/2022/04/AI-ML-sevices.png"
             />
@@ -78,7 +82,9 @@ export default function HomeBottom() {
               AI & ML
             </h1>
             <p className="mb-8 leading-relaxed text-gray-200">
-              Explore the world of artificial intelligence and machine learning. Work on data-driven projects and understand cutting-edge algorithms to solve real-world problems.
+              Explore the world of artificial intelligence and machine learning.
+              Work on data-driven projects and understand cutting-edge
+              algorithms to solve real-world problems.
             </p>
           </div>
         </div>
@@ -89,7 +95,7 @@ export default function HomeBottom() {
         <div className="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center">
           <div className="lg:max-w-[20%] lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <img
-              className="w-36 object-cover object-center rounded"
+              className="w-36 object-cover object-center rounded mx-auto block"
               alt="Competitive Programming"
               src="https://static.vecteezy.com/system/resources/previews/015/086/787/original/programming-skills-glyph-icon-vector.jpg"
             />
@@ -99,7 +105,9 @@ export default function HomeBottom() {
               Competitive Programming
             </h1>
             <p className="mb-8 leading-relaxed text-gray-200">
-              Master problem-solving skills with regular practice in competitive programming. Participate in contests, workshops, and collaborate with peers.
+              Master problem-solving skills with regular practice in competitive
+              programming. Participate in contests, workshops, and collaborate
+              with peers.
             </p>
           </div>
         </div>
