@@ -18,7 +18,8 @@ import Sanath from '../assets/memberImages/Sanath.jpg'
 import Atharva from '../assets/memberImages/Atharva.jpg'
 import Sanchit from '../assets/memberImages/Sanchit_Nigam.jpeg'
 import Arya from '../assets/memberImages/AryaP.jpeg'
-import Lalith from '../assets/memberImages/Lalith.jpeg'
+import Lalith from '../assets/memberImages/LalithM.jpeg'
+import Abhijeet from '../assets/memberImages/Abhijeet.jpeg'
 export default function about() {
   return (
     <div>
@@ -31,8 +32,8 @@ export default function about() {
           <div class="flex flex-wrap -m-4">
             <TeamCards name="Kushagra Sharma" img={Harsh} post="President" data="Computer Science and Engineering" linkedin={"https://www.linkedin.com/in/harsh-agarwal-364439228/"} phone="917549395833" twitter={"https://twitter.com/HK_Agrwl"} github={"https://github.com/HKAgrwl"} />
             <TeamCards name="Pragya Gaur" img={Sanath} post="Vice President" data="Computer Science and Engineering" />
-            <TeamCards name="Abhijeet Sharma" img={Aashray} post="Android Lead" data="Computer Science and Engineering" linkedin={"https://www.linkedin.com/in/aashray-gupta-26a503246/"} phone={"7009378912"} />
-            <TeamCards name="Arya Putatunda" img={Arya} post="AI & ML Lead" data="Computer Science and Engineering" linkedin={"https://www.linkedin.com/in/arya-putatunda-002b40261/"} github={"https://github.com/Movazed?tab=repositories"} instagram={""} />
+            <TeamCards name="Abhijeet Sharma" img={Abhijeet} post="Android Lead" data="Computer Science and Engineering" github={"https://github.com/abhijeetsharma016"} instagram={"https://www.instagram.com/just_abhijeet/"} linkedin={"https://www.linkedin.com/in/abhijeetsharma016/"}/>
+            <TeamCards name="Arya Putatunda" img={Arya} post="AI & ML Lead" data="Computer Science and Engineering" linkedin={"https://www.linkedin.com/in/arya-putatunda-002b40261/"} github={"https://github.com/Movazed?tab=repositories"} instagram={"https://www.instagram.com/jojo_arya_/profilecard/?igsh=Z2MzbDNqY3Rna3Iz"} />
             <TeamCards name="Hitesh Bajaj" img={AravJain} post="Socail Lead I" data="Computer Science and Engineering" linkedin={"https://www.linkedin.com/in/aaravjn/"} phone="7487853240" />
             <TeamCards name="Lalith Mulukutla" img={Lalith} post="Web Dev Lead" data="Computer Science and Engineering" linkedin={"https://www.linkedin.com/in/msrilalith/"} github={"https://github.com/mlalith0302"} instagram={"https://www.instagram.com/lalith0302/"} />
             <TeamCards name="Sanchit Nigam" img={Sanchit} post="Competitive Programming Lead" data="Computer Science and Engineering" linkedin={"https://www.linkedin.com/in/sanchit-nigam-6a899a30a/"} github={"https://github.com/sanchit-cmd"} instagram={" https://www.instagram.com/nigam.sanchit/"}/>
