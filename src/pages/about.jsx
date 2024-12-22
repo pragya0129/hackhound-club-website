@@ -16,6 +16,7 @@ import Soumye from '../assets/memberImages/Soumye.jpg'
 import Aditya from '../assets/memberImages/Aditya.jpeg'
 import Sanath from '../assets/memberImages/Sanath.jpg'
 import Atharva from '../assets/memberImages/Atharva.jpg'
+import Sanchit from '../assets/memberImages/Sanchit_Nigam.jpeg'
 
 export default function about() {
   return (
@@ -32,15 +33,14 @@ export default function about() {
             <TeamCards name="Abhijeet Sharma" img={Aashray} post="Android Lead" data="Computer Science and Engineering" linkedin={"https://www.linkedin.com/in/aashray-gupta-26a503246/"} phone={"7009378912"} />
             <TeamCards name="Arya Putatunda" img={ArjavBarya} post="AI & ML Lead" data="Mechanical Engineering" linkedin={"https://www.linkedin.com/in/arjav-barya-569584235/"} phone={"9301763998"} />
             <TeamCards name="Hitesh Bajaj" img={AravJain} post="Socail Lead I" data="Computer Science and Engineering" linkedin={"https://www.linkedin.com/in/aaravjn/"} phone="7487853240" />
-            <TeamCards name="Lalith Mulukutla" img={Prakhar} post="Web Dev Lead" data="Computer Science and Engineering" linkedin={"https://www.linkedin.com/in/prakhar-kapisway-1524ba22b/"} phone={"9508307404"} />
-            <TeamCards name="Sanchit Nigam" img={Atharva} post="Competitive Programming Lead" data="Computer Science and Engineering" />
+            <TeamCards name="Lalith Mulukutla" img={Prakhar} post="Web Dev Lead" data="Computer Science and Engineering" linkedin={"https://www.linkedin.com/in/msrilalith/"} github={"https://github.com/mlalith0302"} instagram={"https://www.instagram.com/lalith0302/"} />
+            <TeamCards name="Sanchit Nigam" img={Sanchit} post="Competitive Programming Lead" data="Computer Science and Engineering" linkedin={"https://www.linkedin.com/in/sanchit-nigam-6a899a30a/"} github={"https://github.com/sanchit-cmd"} instagram={" https://www.instagram.com/nigam.sanchit/"}/>
             <TeamCards name="Zuhaib Farooqui" img={Vishwaroop} post="Soical Media Lead II" data="Chemical Engineering" linkedin={"https://www.linkedin.com/in/vishwaroop-gangarde-118a02228/"} phone="7709888143" />
             
 
           </div>
           <div class="flex flex-col text-center w-full mb-20 mt-20">
             <h1 class="text-2xl font-medium title-font mb-4 text-gray-300 tracking-widest">FACULTY COORIDNATOR</h1>
-            {/* <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-300">We have a dedicated team of core members who are always ready to give back to the community</p> */}
           </div>
           <div class="flex flex-wrap -m-4">
             <TeamCards name="Dr Oshin Sharma" post="Associate Professor" data="SRM-IST" linkedin={"https://www.linkedin.com/in/qascade"} phone="9149601803" twitter={"https://twitter.com/qascade"} github={"https://github.com/qascade"} />

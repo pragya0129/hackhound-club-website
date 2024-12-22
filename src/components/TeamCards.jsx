@@ -1,76 +1,112 @@
 import React from "react";
-import DummyImage from '../assets/memberImages/JohnDoe.jpg'
+import DummyImage from "../assets/memberImages/JohnDoe.jpg";
 
-export default function TeamCards({ name, post, data,linkedin,twitter,phone,img,github}) {
+export default function TeamCards({
+  name = "John Doe",
+  post = "Member",
+  data = "Bio not provided",
+  linkedin,
+  instagram,
+  phone,
+  img,
+  github,
+}) {
   return (
-    <div class="p-4 lg:w-1/2">
-      <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left ml-10">
+    <div className="p-4 lg:w-1/2">
+      <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
         <img
           alt="team"
-          class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+          className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
           src={img || DummyImage}
         />
-        <div class="flex-grow sm:pl-8">
-          <h2 class="title-font font-medium text-lg text-gray-200">{name}</h2>
-          <h3 class="text-gray-300 mb-3">{post}</h3>
-          <p class="mb-4 text-gray-300">{data}.</p>
-          <span class="inline-flex">
-            <a class="text-gray-500 hover:text-blue-600" href={linkedin} target="_blank" rel="noopener noreferrer">
-              <svg
-                fill="currentColor"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="w-5 h-5"
-                viewBox="0 0 24 24"
+        <div className="flex-grow sm:pl-8">
+          <h2 className="title-font font-medium text-lg text-gray-200">{name}</h2>
+          <h3 className="text-gray-300 mb-3">{post}</h3>
+          <p className="mb-4 text-gray-300">{data}</p>
+          <span className="inline-flex">
+            {linkedin && (
+              <a
+                className="text-gray-500 hover:text-blue-600"
+                href={linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <path
-                  stroke="none"
-                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
-                ></path>
-                <circle cx="4" cy="4" r="2" stroke="none"></circle>
-              </svg>
-            </a>
-            <a class="ml-2 text-gray-500 hover:text-blue-400" target="_blank" rel="noopener noreferrer" href={twitter}>
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="w-5 h-5"
-                viewBox="0 0 24 24"
+                <svg
+                  fill="currentColor"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  className="w-5 h-5"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="none"
+                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                  ></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            )}
+            {instagram && (
+              <a
+                className="ml-2 text-gray-500 hover:text-pink-500"
+                href={instagram}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-              </svg>
-            </a>
-            <a class="ml-2 text-gray-500 hover:text-lime-500" target="_blank" rel="noopener noreferrer" href={"tel:+" + phone}>
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="w-5 h-5"
-                viewBox="0 0 24 24"
+                <svg
+                  fill="currentColor"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  className="w-5 h-5"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M8 3a5 5 0 00-5 5v8a5 5 0 005 5h8a5 5 0 005-5V8a5 5 0 00-5-5H8zm8 2a3 3 0 013 3v8a3 3 0 01-3 3H8a3 3 0 01-3-3V8a3 3 0 013-3h8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path d="M17.5 6.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"></path>
+                </svg>
+              </a>
+            )}
+            {phone && (
+              <a
+                className="ml-2 text-gray-500 hover:text-lime-500"
+                href={`tel:${phone}`}
               >
-                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-              </svg>
-            </a>
-            <a class="ml-2 text-gray-500 hover:text-rose-500" target="_blank" rel="noopener noreferrer" href={github}>
-              <svg
-                // fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="w-9 h-9"
-                viewBox="0 0 30 30"
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  className="w-5 h-5"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>
+              </a>
+            )}
+            {github && (
+              <a
+                className="ml-2 text-gray-500 hover:text-rose-500"
+                href={github}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
-              </svg>
-            </a>
+                <svg
+                  fill="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  className="w-5 h-5"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.57v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.54-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.83 1.23 1.83 1.23 1.07 1.84 2.8 1.31 3.49 1 .11-.78.42-1.31.76-1.61-2.67-.31-5.47-1.34-5.47-5.96 0-1.31.47-2.39 1.23-3.23-.12-.31-.53-1.57.11-3.28 0 0 1-.32 3.28 1.23.96-.27 2-.4 3.03-.4 1.03 0 2.07.13 3.03.4 2.28-1.55 3.28-1.23 3.28-1.23.64 1.71.23 2.97.11 3.28.76.84 1.23 1.92 1.23 3.23 0 4.63-2.81 5.65-5.49 5.95.43.37.81 1.1.81 2.21v3.27c0 .31.22.69.82.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"></path>
+                </svg>
+              </a>
+            )}
           </span>
         </div>
       </div>
