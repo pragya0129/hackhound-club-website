@@ -20,6 +20,7 @@ import Sanchit from "../assets/memberImages/Sanchit_Nigam.jpeg";
 import Arya from "../assets/memberImages/AryaP.jpeg";
 import Lalith from "../assets/memberImages/LalithM.jpeg";
 import Abhijeet from "../assets/memberImages/Abhijeet.jpeg";
+import Pragya from "../assets/memberImages/Pragya.jpeg"
 export default function about() {
   return (
     <div>
@@ -47,9 +48,12 @@ export default function about() {
             />
             <TeamCards
               name="Pragya Gaur"
-              img={Sanath}
+              img={Pragya}
               post="Vice President"
               data="Computer Science and Engineering"
+              github={"https://github.com/pragya0129"}
+              linkedin={"https://www.linkedin.com/in/pragyagaur12"}
+              instagram={"https://www.instagram.com/pianistpragya/"}
             />
             <TeamCards
               name="Abhijeet Sharma"
