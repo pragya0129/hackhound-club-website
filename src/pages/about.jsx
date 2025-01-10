@@ -21,6 +21,7 @@ import Arya from "../assets/memberImages/AryaP.jpeg";
 import Lalith from "../assets/memberImages/LalithM.jpeg";
 import Abhijeet from "../assets/memberImages/Abhijeet.jpeg";
 import Pragya from "../assets/memberImages/Pragya.jpeg"
+import Zuhaib from "../assets/memberImages/Zuhaib.jpg"
 export default function about() {
   return (
     <div>
@@ -103,13 +104,12 @@ export default function about() {
             />
             <TeamCards
               name="Zuhaib Farooqui"
-              img={Vishwaroop}
-              post="Soical Media Lead II"
-              data="Chemical Engineering"
-              linkedin={
-                "https://www.linkedin.com/in/vishwaroop-gangarde-118a02228/"
-              }
-              phone="7709888143"
+              img={Zuhaib}
+              post="Media Lead "
+              data="Computer Science and Engineering"
+              linkedin={"https://www.linkedin.com/in/zuhaibfarooqui1204/"}
+              github={"https://github.com/iammzf"}
+              instagram={"https://www.instagram.com/iammzf/"}
             />
           </div>
           <div class="flex flex-col text-center w-full mb-20 mt-20">
