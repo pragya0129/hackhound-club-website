@@ -6,6 +6,7 @@ import About from './pages/about';
 import { Routes, Route} from "react-router-dom";
 import Footer from './components/Footer'
 import Event from './pages/event';
+import Register from './pages/register.jsx'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path="/ClubWebsite/event" element={<Event/>}/>
       <Route path="/ClubWebsite/contact" element={<Contact/>}/>
       <Route path="/ClubWebsite/team" element={<About/>}/>
+      <Route path="/ClubWebsite/register" element={<Register/>}/>
       {/* <Route path="/events" element={<Events/>}/> */}
     </Routes>
     <Footer/>
