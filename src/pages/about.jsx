@@ -22,6 +22,7 @@ import Lalith from "../assets/memberImages/LalithM.jpeg";
 import Abhijeet from "../assets/memberImages/Abhijeet.jpeg";
 import Pragya from "../assets/memberImages/Pragya.jpeg"
 import Zuhaib from "../assets/memberImages/Zuhaib.jpg"
+import Hitesh from "../assets/memberImages/Hitesh.jpg"
 export default function about() {
   return (
     <div>
@@ -78,11 +79,12 @@ export default function about() {
             />
             <TeamCards
               name="Hitesh Bajaj"
-              img={AravJain}
-              post="Socail Lead I"
+              img={Hitesh}
+              post="Social Lead "
               data="Computer Science and Engineering"
-              linkedin={"https://www.linkedin.com/in/aaravjn/"}
-              phone="7487853240"
+              linkedin={"https://www.linkedin.com/in/hitesh-hb"}
+              instagram={"https://www.instagram.com/simply.__.complicated"}
+              github={"https://github.com/HITESH07-TECH"}
             />
             <TeamCards
               name="Lalith Mulukutla"
