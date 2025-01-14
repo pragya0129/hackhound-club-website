@@ -23,6 +23,8 @@ import Abhijeet from "../assets/memberImages/Abhijeet.jpeg";
 import Pragya from "../assets/memberImages/Pragya.jpeg"
 import Zuhaib from "../assets/memberImages/Zuhaib.jpg"
 import Hitesh from "../assets/memberImages/Hitesh.jpg"
+import Kushagra from "../assets/memberImages/Kushagra.jpeg"
+import Oshin from "../assets/memberImages/Oshin.jpeg"
 export default function about() {
   return (
     <div>
@@ -40,13 +42,11 @@ export default function about() {
           <div class="flex flex-wrap -m-4 justify-center">
             <TeamCards
               name="Kushagra Sharma"
-              img={Harsh}
+              img={Kushagra}
               post="President"
               data="Computer Science and Engineering"
-              linkedin={"https://www.linkedin.com/in/harsh-agarwal-364439228/"}
-              phone="917549395833"
-              twitter={"https://twitter.com/HK_Agrwl"}
-              github={"https://github.com/HKAgrwl"}
+              linkedin={"linkedin.com/in/kushagra-sharma-b78515249"}
+              instagram={"https://www.instagram.com/ikushagra._/"}
             />
             <TeamCards
               name="Pragya Gaur"
@@ -122,12 +122,11 @@ export default function about() {
           <div class="flex flex-wrap -m-4 justify-center lg:justify-start">
             <TeamCards
               name="Dr Oshin Sharma"
+              img={Oshin}
               post="Associate Professor"
               data="SRM-IST"
-              linkedin={"https://www.linkedin.com/in/qascade"}
-              phone="9149601803"
-              twitter={"https://twitter.com/qascade"}
-              github={"https://github.com/qascade"}
+              linkedin={"https://www.linkedin.com/in/dr-oshin-sharma-99142017/"}
+              instagram={"https://www.instagram.com/oshinsharmaa/"}
             />
           </div>
         </div>
