@@ -6,14 +6,7 @@ const Register = () => {
       <div className="shadow-md rounded-lg overflow-hidden w-full max-w-3xl">
         <div className="p-6">
           <div className="overflow-hidden rounded-lg">
-            <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSfPCJ-7UU4flpul9ZBchu-5caJdvLe74DKbQu0VOGaDynlUHw/viewform?embedded=true"
-              width="640"
-              height="900"
-              className="w-full"
-            >
-              Loading…
-            </iframe>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKP8NTkHEDkH56f8SZaZEhdMksNoT4aQYIT2UifCPeVig1pg/viewform?embedded=true" onSubmit={console.log("DONE")} width="640" height="900" className="w-full">Loading…</iframe>
           </div>
         </div>
       </div>
