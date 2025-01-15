@@ -1,21 +1,5 @@
 import React from "react";
 import TeamCards from "../components/TeamCards";
-import Abhinish from "../assets/memberImages/Abhinish.jpg";
-import AravJain from "../assets/memberImages/AravJain.jpg";
-import ArjavBarya from "../assets/memberImages/ArjavBarya.jpg";
-import Sunny from "../assets/memberImages/Sunny.jpg";
-import Harsh from "../assets/memberImages/Harsh.jpeg";
-import Prakhar from "../assets/memberImages/Prakhar.jpg";
-import Vishwaroop from "../assets/memberImages/Vishwaroop.jpg";
-import Aashray from "../assets/memberImages/Aashray.jpg";
-import Aayush from "../assets/memberImages/Aayush.jpg";
-import Manish from "../assets/memberImages/Manish.jpg";
-import Kishan from "../assets/memberImages/Kishan.jpeg";
-import Sourav from "../assets/memberImages/Sourav.jpeg";
-import Soumye from "../assets/memberImages/Soumye.jpg";
-import Aditya from "../assets/memberImages/Aditya.jpeg";
-import Sanath from "../assets/memberImages/Sanath.jpg";
-import Atharva from "../assets/memberImages/Atharva.jpg";
 import Sanchit from "../assets/memberImages/Sanchit_Nigam.jpeg";
 import Arya from "../assets/memberImages/AryaP.jpeg";
 import Lalith from "../assets/memberImages/LalithM.jpeg";
@@ -25,6 +9,7 @@ import Zuhaib from "../assets/memberImages/Zuhaib.jpg"
 import Hitesh from "../assets/memberImages/Hitesh.jpg"
 import Kushagra from "../assets/memberImages/Kushagra.jpeg"
 import Oshin from "../assets/memberImages/Oshin.jpeg"
+import Abhilasha from "../assets/memberImages/Abhilasha.jpeg"
 export default function about() {
   return (
     <div>
@@ -127,6 +112,14 @@ export default function about() {
               data="SRM-IST"
               linkedin={"https://www.linkedin.com/in/dr-oshin-sharma-99142017/"}
               instagram={"https://www.instagram.com/oshinsharmaa/"}
+            />
+            <TeamCards
+              name="Dr Abhilasha Singh"
+              img={Abhilasha}
+              post="Associate Professor"
+              data="SRM-IST"
+              linkedin={"https://www.linkedin.com/in/abhilasha-singh-1b282637/"}
+              
             />
           </div>
         </div>
