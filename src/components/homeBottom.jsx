@@ -1,5 +1,5 @@
 import React from "react";
-
+import WebDevImg from "../assets/WebDevImg.png"
 export default function HomeBottom() {
   return (
     <div
@@ -28,7 +28,7 @@ export default function HomeBottom() {
             <img
               className="w-36 object-cover object-center rounded mx-auto block"
               alt="Web Development"
-              src="https://thumbs.dreamstime.com/z/web-development-icon-trendy-flat-vector-white-background-programming-collection-illustration-can-be-use-mobile-eps-130326341.jpg"
+              src={WebDevImg}
             />
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-10 flex flex-col md:items-start md:text-left items-center text-center">

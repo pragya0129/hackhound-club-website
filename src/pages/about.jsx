@@ -119,6 +119,7 @@ export default function about() {
               post="Associate Professor"
               data="SRM-IST"
               linkedin={"https://www.linkedin.com/in/abhilasha-singh-1b282637/"}
+              instagram={"https://www.instagram.com/abhilashasingh296"}
               
             />
           </div>
