@@ -1,19 +1,19 @@
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import clubLogo from '../assets/clubLogo.png'
-import { Link } from 'react-router-dom'
+import { Fragment } from 'react';
+import { Disclosure, Menu, Transition } from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import clubLogo from '../assets/clubLogo.png';
+import { Link } from 'react-router-dom';
 
 const navigation = [
-  { name: 'Home', href: '#', current: false, link: "/ClubWebsite", color: "lime" },
-  { name: 'Events', href: '#', current: false, link: "/ClubWebsite/event", color: "purple" },
-  { name: 'Team', href: '#', current: false, link: "/ClubWebsite/team", color: "yellow" },
-  { name: 'Contact', href: '#', current: false, link: "/ClubWebsite/contact", color: "rose" },
-  { name: 'Register', href: '#', current: false, link: "/ClubWebsite/register", color: "cyan" },
-]
+  { name: 'Home', current: false, link: "/ClubWebsite", color: "lime" },
+  { name: 'Events', current: false, link: "/ClubWebsite/event", color: "purple" },
+  { name: 'Team', current: false, link: "/ClubWebsite/team", color: "yellow" },
+  { name: 'Contact', current: false, link: "/ClubWebsite/contact", color: "rose" },
+  { name: 'Register', current: false, link: "/ClubWebsite/register", color: "cyan" },
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(' ');
 }
 
 export default function Example() {
@@ -40,30 +40,28 @@ export default function Example() {
                     <img
                       className="block h-8 w-auto lg:hidden"
                       src={clubLogo}
-                      alt="Your Company"
+                      alt="Club Logo"
                     />
                     <img
                       className="hidden h-8 w-auto lg:block"
                       src={clubLogo}
-                      alt="Your Company"
+                      alt="Club Logo"
                     />
                   </div>
                   <div className="hidden sm:ml-6 sm:block">
                     <div className="flex space-x-4">
                       {navigation.map((item) => (
-                        <Link key={item.name} to={item.link}>
-                          <a
-                            href={item.href}
-                            className={classNames(
-                              item.current
-                                ? 'bg-gray-900 text-white'
-                                : `text-gray-300 hover:bg-${item.color}-600 hover:text-white`,
-                              'px-3 py-2 rounded-md text-sm font-medium'
-                            )}
-                            aria-current={item.current ? 'page' : undefined}
-                          >
-                            {item.name}
-                          </a>
+                        <Link
+                          key={item.name}
+                          to={item.link}
+                          className={classNames(
+                            item.current
+                              ? 'bg-gray-900 text-white'
+                              : `text-gray-300 hover:bg-${item.color}-600 hover:text-white`,
+                            'px-3 py-2 rounded-md text-sm font-medium'
+                          )}
+                        >
+                          {item.name}
                         </Link>
                       ))}
                     </div>
@@ -78,19 +76,17 @@ export default function Example() {
             <Disclosure.Panel className="sm:hidden">
               <div className="space-y-1 px-2 pt-2 pb-3">
                 {navigation.map((item) => (
-                  <Link key={item.name} to={item.link}>
-                    <Disclosure.Button
-                      as="a"
-                      className={classNames(
-                        item.current
-                          ? 'bg-gray-900 text-white'
-                          : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                        'block px-3 py-2 rounded-md text-base font-medium'
-                      )}
-                      aria-current={item.current ? 'page' : undefined}
-                    >
-                      {item.name}
-                    </Disclosure.Button>
+                  <Link
+                    key={item.name}
+                    to={item.link}
+                    className={classNames(
+                      item.current
+                        ? 'bg-gray-900 text-white'
+                        : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                      'block px-3 py-2 rounded-md text-base font-medium'
+                    )}
+                  >
+                    {item.name}
                   </Link>
                 ))}
               </div>
@@ -99,5 +95,5 @@ export default function Example() {
         )}
       </Disclosure>
     </div>
-  )
+  );
 }
